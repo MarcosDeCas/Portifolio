@@ -1,0 +1,99 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introducao h1::after {
+  content: url("/projeto-pessoal/img/inicio-titulo02.svg");
+  display: block;
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  left: -40px;
+  top: -15px;
+  z-index: -1;
+}
+
+.introducao h1::before {
+  content: url("/projeto-pessoal/img/final-titulo02.svg");
+  display: block;
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  right: -15px;
+  bottom: -28px;
+  z-index: -1;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+  margin-bottom: 100px;
+}
+
+.introducao strong {
+  font-weight: bold;
+  color: #a839ff;
+}
+
+@media (max-width: 1300px) {
+  .introducao h1::after {
+    content: "";
+  }
+
+  .introducao h1::before {
+    content: url("/projeto-pessoal/img/final-titulo02.svg");
+  }
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3.5rem;
+  }
+
+  .introducao h1::after {
+    content: none;
+  }
+
+  .introducao h1::before {
+    content: url("/projeto-pessoal/img/final-titulo04.svg");
+    margin-bottom: -20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 3rem;
+  }
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    top: 168px;
+    left: 250px;
+  }
+  .introducao p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+}
