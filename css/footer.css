@@ -32,12 +32,12 @@
 }
 
 .footer-contato .email::before {
-content: url("/projeto-pessoal/img/email.svg");
+content: url("../img/email.svg");
 padding-right: 10px;
 }
 
 .footer-contato .numero::before {
-  content: url("/projeto-pessoal/img/numero.svg");
+  content: url("../img/numero.svg");
   padding-right: 10px;
   }
 

@@ -16,7 +16,7 @@
 }
 
 .introducao h1::after {
-  content: url("/projeto-pessoal/img/inicio-titulo02.svg");
+  content: url("../img/inicio-titulo02.svg");
   display: block;
   width: 130px;
   height: 100px;
@@ -27,7 +27,7 @@
 }
 
 .introducao h1::before {
-  content: url("/projeto-pessoal/img/final-titulo02.svg");
+  content: url("../img/final-titulo02.svg");
   display: block;
   width: 130px;
   height: 100px;
@@ -54,7 +54,7 @@
   }
 
   .introducao h1::before {
-    content: url("/projeto-pessoal/img/final-titulo02.svg");
+    content: url("../img/final-titulo02.svg");
   }
 }
 
@@ -68,7 +68,7 @@
   }
 
   .introducao h1::before {
-    content: url("/projeto-pessoal/img/final-titulo04.svg");
+    content: url("../img/final-titulo04.svg");
     margin-bottom: -20px;
   }
 }
